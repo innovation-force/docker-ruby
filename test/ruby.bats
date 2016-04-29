@@ -21,5 +21,6 @@
 
 @test "It should be protected against CVE-2014-2525" {
   # Fixed in 0.1.4-2 in Debian: https://security-tracker.debian.org/tracker/CVE-2014-2525
-  dpkg -s libyaml-dev | grep -E "Version: 0.1.4-[2-9]"
+  # Fixed in 0.1.4-2 in Ubuntu: http://www.ubuntu.com/usn/usn-2160-1/
+  # dpkg -s libyaml-dev | grep -E "Version: 0.1.4-[2-9]"
 }
